@@ -5,22 +5,24 @@
   </head>
   <body>
     <div id="html-forms">
+      <legend> <h1>CREATE YOUR ACCOUNT</h1></legend>
       <form>
-        <label for="fname"> FIRST NAME </label> <br />
-        <input type="fname" id="fname" name="fname" size="30" /> <br />
+        <label for="fname"> <b> FIRST NAME </b> </label> <br />
+        <input type="fname" id="fname" name="fname" size="30" placeholder="First Name" /> <br />
         <br />
 
-        <label for="lname"> LAST NAME </label> <br />
-        <input type="lname" id="lname" name="lname" size="30" /> <br />
+        <label for="lname"> <b> LAST NAME </b> </label> <br />
+        <input type="lname" id="lname" name="lname" size="30" placeholder="Last Name"/> <br />
         <br />
 
-        <label for="email"> EMAIL </label> <br />
+        <label for="email"> <b> EMAIL </b> </label> <br />
         <input
           type="email"
           id="email"
           name="email"
           pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
           pattern="[\w.%+-]+@domain\.com\.ph"
+          placeholder="myself@sample.com"
           size="30"
           required
         /><br />
@@ -28,23 +30,34 @@
 
         <div class="input-group gt-1">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1"></span>
           </div>
 
+          <label for="username"> <b>USERNAME </b></label> <br />
           <input
             type="text"
             class="form-control"
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
+            placeholder="@draftrook54"
+            size="30"
+            aria-label="username"
+            aria-describedby="username"
           />
         </div>
 
+        <br>
+        <label for="phone"> <b> SMS NUMBER </b> <br> </label>
+
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+          size="30" placeholder="912-345-6789">
+          <br>
+          <small> <b> FORMAT: </b> 123-456-7890</small>
+          <br>
+
         <br />
 
-        <label for="psswd"> PASSWORD </label> <br />
+        <label for="psswd"> <b> PASSWORD </b> </label> <br />
 
-        <input type="password" value="notpass" id="passinput" /><br />
+        <input type="password" value="notpass" id="passinput" size="30" placeholder="New Password" /> <br />
         <input type="checkbox" onclick="myFunction()" />Show Password
 
         <script>
@@ -63,8 +76,8 @@
         <br />
 
         <fieldset data-role="controlgroup">
-          <legend>GENDER</legend>
-          <input type="radio" name="sex" id="male" value="male" checked />
+          <legend> <b> GENDER </b> </legend>
+          <input type="radio" name="sex" id="male" value="male" size="30" checked />
           <label for="male">Male</label>
           <br />
           
@@ -90,15 +103,7 @@
 
         <br />
 
-        <h2>Type Checkbox</h2>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> I have a bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> I have a car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3"> I have a boat</label><br />
-        <br />
-
+        <label for="birthday_month"> <b> BIRTHDAY </b> </label> <br />
         <select
           aria-label="Month"
           name="birthday_month"
@@ -289,6 +294,29 @@
         </select>
 
         </select>
+
+        <br> <br>
+
+        <h2>PREFFERED PAYMENT METHOD</h2>
+        <input type="checkbox" id="payment1" name="payment1" value="GCASH" />
+        <label for="vehicle1"> GCASH </label><br />
+
+        <input type="checkbox" id="payment1" name="payment1" value="COD" />
+        <label for="vehicle2"> Cash on Delivery </label><br />
+
+        <input type="checkbox" id="payment1" name="payment1" value="BANK" />
+        <label for="vehicle3"> Bank Account </label><br />
+
+        <div class="uiStickyPlaceholderInput uiStickyPlaceholderEmptyInput">
+
+          <div class="placeholder" aria-hidden="true"> </div>
+
+          <input type="text" class="inputtext _58mg _5dba _2ph-"
+                data-type="text" name="custom_gender" placeholder="Specific: "
+                aria-label="Specific: " id="u_4_q_Pr">
+                
+        <br/> <br>
+        <input type="submit" value="REGISTER" class="fbtn"><br>
       </form>
     </div>
   </body>
