@@ -170,13 +170,14 @@
 
   <div class="form-group">
     <label for="">Email <span style="color:red;">*</span></label>
-        <input type="Email" name="name" class="personalInfo"
+        <input type="Email" name="name" class="personalInfo" required
                placeholder="myself@sample.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+              
   </div>
 
   <div class="form-group">
     <label for="">Contact Number <span style="color:red;">*</span></label>
-    <input type="text" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="personalInfo">
+    <input type="text" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="personalInfo" required >
     <span class="textfield"><b>Format: 912-345-6789</b></span>
     </div>
 
@@ -184,10 +185,10 @@
 <hr>
  <div class="form-group">
     <label>ID Number <span style="color:red;">*</span></label>
-    <input type="text" name="" class="personalInfo">
+    <input type="text" name="" class="personalInfo" required>
   </div>
   <div class="form-group">
-    <label>Line Address <span style="color:red;">*</span></label>
+    <label>Line Address <span style="color:red;" required>*</span></label>
     <input type="text" name="" class="OrderInfo">
     <span class="textfield2">Street Address</span>
   </div>
@@ -222,7 +223,12 @@
     <th>
       <select class="tablefield select" >
     <option value="">-Select-</option>
-     <option value=""></option>
+     <option value="1" selected="1">Philippines</option>
+     <option value="2">Japan</option>
+     <option value="3">Thailand</option>
+     <option value="4">United States</option>
+     <option value="5">United Kingdom</option>
+
   </select>
   <span>Country</span>
   </div></th>
@@ -232,7 +238,7 @@
 </div>
 <div class="form-group">
     <label for="">Preferred Payment Method <span style="color:red;">*</span></label>
-     <input type="text" name="" class="personalInfo">
+     <input type="text" name="" class="personalInfo" required>
 </div>
 <br>
 <div class="button">
