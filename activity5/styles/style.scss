@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+
+$grey: #E5E5E5;
+$roboto:'Roboto', sans-serif;
+$orange:#FFECE2;
+$pink:#FC0E52;
+
+*{
+    font-family: $roboto;
+}
+.bg-pink{
+    background: $pink;
+}
+body{
+    overflow-x:hidden;
+}
+
+
+main{
+    padding-top: 100px;
+    .hero{
+        // overflow-y: hidden;
+        font-family: $roboto;
+        height: 100vh;
+        position: relative;
+        .shape-bg{
+            position: absolute;
+            background: $orange;
+            width: 1036px;
+            top: -60%;
+            z-index: -1;
+            height: 1036px;
+            right: -30%;
+            border-radius: 50%;
+        }
+        h1{
+            font-size: 4.2rem;
+            font-weight: 700;
+        }
+        .hero-image{
+            position: relative;
+            z-index: 1;
+          
+        }
+    }
+}

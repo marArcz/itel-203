@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-pink {
+  background: #FC0E52;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 100px;
+}
+
+main .hero {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+main .hero .shape-bg {
+  position: absolute;
+  background: #FFECE2;
+  width: 1036px;
+  top: -60%;
+  z-index: -1;
+  height: 1036px;
+  right: -30%;
+  border-radius: 50%;
+}
+
+main .hero h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+main .hero .hero-image {
+  position: relative;
+  z-index: 1;
+}
